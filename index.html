@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <meta charset="UTF-8">
   <title>Home</title>
   <link rel="stylesheet" href="style.css">
@@ -25,11 +25,13 @@
       <span>Yummy salad!</span>
 
       <div class="menu">
-        <button onclick="toggleMenu(this)">⋯</button>
+        <button onclick="toggleMenu(this)">
+          <i class="fa-solid fa-ellipsis"></i>
+        </button>
         <div class="dropdown">
-          <p>Save</p>
-          <p>Share</p>
-          <p>Download</p>
+          <p><i class="fa-solid fa-bookmark"></i> Save</p>
+          <p><i class="fa-solid fa-share"></i> Share</p>
+          <p><i class="fa-solid fa-download"></i> Download</p>
         </div>
       </div>
 
@@ -57,11 +59,11 @@
 
 <!-- BOTTOM NAV -->
 <div class="bottom-bar">
-  <span>🏠</span>
-  <span>🔍</span>
-  <span>➕</span>
-  <span>💬</span>
-  <span>👤</span>
+  <i class="fa-solid fa-house"></i>
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <i class="fa-solid fa-plus"></i>
+  <i class="fa-solid fa-comment"></i>
+  <img src="https://via.placeholder.com/30" class="profile-icon">
 </div>
 
 <script>
