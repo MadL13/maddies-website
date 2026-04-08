@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <a class="active" href="index.html">Home</a>
+  <a href="food.html">Food</a>
+  <a href="clothes.html">Clothes</a>
+  <a href="#">Jewelry</a>
+</div>
+
+<!-- IMAGE GRID -->
+<div class="grid">
+
+  <!-- CARD -->
+  <div class="card">
+    <img src="https://via.placeholder.com/300x400">
+    <div class="caption-bar">
+      <span>Yummy salad!</span>
+
+      <div class="menu">
+        <button onclick="toggleMenu(this)">⋯</button>
+        <div class="dropdown">
+          <p>Save</p>
+          <p>Share</p>
+          <p>Download</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/300x250">
+    <div class="caption-bar">
+      <span>Cool outfit!</span>
+
+      <div class="menu">
+        <button onclick="toggleMenu(this)">⋯</button>
+        <div class="dropdown">
+          <p>Save</p>
+          <p>Share</p>
+          <p>Download</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<!-- BOTTOM NAV -->
+<div class="bottom-bar">
+  <span>🏠</span>
+  <span>🔍</span>
+  <span>➕</span>
+  <span>💬</span>
+  <span>👤</span>
+</div>
+
+<script>
+function toggleMenu(button) {
+  const dropdown = button.nextElementSibling;
+  dropdown.classList.toggle("show");
+}
+</script>
+
+</body>
+</html>
