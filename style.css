@@ -79,6 +79,7 @@ body {
   border-radius: 16px;
   transition: 0.2s;
   pointer-events: none;
+  z-index: 1;
 }
 
 .pin:hover::after {
