@@ -67,21 +67,6 @@ body {
 }
 
 
-/* HOVER EFFECT */
-.pin::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0);
-  border-radius: 16px;
-  transition: 0.2s;
-  pointer-events: none;
-  z-index: 1;
-}
-
-.pin:hover::after {
-  background: rgba(0,0,0,0.15);
-}
 
 /* MENU */
 .menu {
