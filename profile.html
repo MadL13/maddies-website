@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<h1>Saved Pins</h1>
+
+<div class="masonry" id="saved-container"></div>
+
+<script>
+const container = document.getElementById("saved-container");
+
+const saved = JSON.parse(localStorage.getItem("savedImages")) || [];
+
+saved.forEach(src => {
+  const div = document.createElement("div");
+  div.className = "pin";
+
+  div.innerHTML = `<img src="${src}">`;
+
+  container.appendChild(div);
+});
+</script>
+
+</body>
+</html>
