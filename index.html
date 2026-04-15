@@ -23,9 +23,9 @@
 
   <!-- PIN -->
   <div class="pin">
-  <img src="images/food1.jpeg">
+  <img src="images/food1.jpeg" class="pin-img">
 
-  <button class="save-btn">Save</button>
+  <button class="save-btn" onclick="saveImage(this)">Save</button>
 
   <div class="pin-info">
     <span>love frozen grapes!</span>
@@ -169,6 +169,20 @@
 function toggleMenu(button) {
   const dropdown = button.nextElementSibling;
   dropdown.classList.toggle("show");
+}
+</script>
+<script>
+function saveImage(button) {
+  const pin = button.parentElement;
+  const img = pin.querySelector(".pin-img").src;
+
+  let saved = JSON.parse(localStorage.getItem("savedImages")) || [];
+
+  saved.push(img);
+
+  localStorage.setItem("savedImages", JSON.stringify(saved));
+
+  alert("Saved!");
 }
 </script>
 
