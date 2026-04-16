@@ -85,6 +85,7 @@ body {
   background: white;
   border: 1px solid #ccc;
   border-radius: 8px;
+  z-index: 9999;
 }
 
 .dropdown p {
